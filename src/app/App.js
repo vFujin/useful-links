@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/index.css';
+import '../styles/responsive.css';
 import Sections from "./sections";
 import Preview from "./preview";
 
@@ -49,12 +50,13 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Useful links</h1>
         <Sections handlePreviewClick={this.handlePreviewClick}/>
         {
           activePreview !== undefined
             ? <Preview activePreview={activePreview}
                        handleClosePreview={this.handleClosePreview}/>
-            : null
+            : undefined
         }
 
       </div>

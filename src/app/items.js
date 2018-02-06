@@ -2,15 +2,15 @@ import React from 'react';
 import views from '../assets/views.svg';
 
 const Items = ({items, handlePreviewClick}) =>{
-  const mapItems = () => items.map(item=> {
+  const mapItems = () => items.map((item, i)=> {
     const {name, url, preview} = item;
     const itemPreview = preview
       ? <img id={preview} onClick={handlePreviewClick} src={views} alt={`${name} preview`}/>
       : null;
 
     return (
-      <li>
-        <a href={url} target="_blank" rel="noreferrer noopener">
+      <li className="sectionItem" key={i}>
+        <a href={url} target="_blank" rel="noreferrer noopener" className="sectionItem__wrapper">
           <span>></span>
           <p>{name}</p>
         </a>
@@ -20,7 +20,7 @@ const Items = ({items, handlePreviewClick}) =>{
   });
 
   return (
-    <ul>
+    <ul className="sectionList__section--items">
       {mapItems()}
     </ul>
   )

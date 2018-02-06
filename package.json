@@ -2,6 +2,7 @@
   "name": "useful-stuff",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vfujin.github.io/useful-links",
   "dependencies": {
     "particles.js": "^2.0.0",
     "react": "^16.2.0",
@@ -12,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1"

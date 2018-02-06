@@ -4,11 +4,11 @@ import Items from "./items";
 import SectionHeader from "./section-header";
 
 const Sections = ({handlePreviewClick}) =>{
-  const mapData = () => data.map(dataSection=> {
+  const mapData = () => data.map((dataSection, i)=> {
     const {items} = dataSection;
 
     return (
-      <li>
+      <li key={i} className="sectionList__section">
         <SectionHeader section={dataSection}/>
         <Items items={items}
                handlePreviewClick={handlePreviewClick}/>
@@ -17,7 +17,7 @@ const Sections = ({handlePreviewClick}) =>{
   });
 
   return (
-    <ul>
+    <ul className="sectionList">
       {mapData()}
     </ul>
   )

@@ -5,7 +5,7 @@ const Preview = ({activePreview, handleClosePreview}) =>{
   return (
     <div className="preview-wrapper" onClick={handleClosePreview}>
       <div>
-        <img src={imageObj[activePreview]}/>
+        <img src={imageObj[activePreview]} alt={activePreview}/>
         <button onClick={handleClosePreview}>X</button>
       </div>
     </div>
