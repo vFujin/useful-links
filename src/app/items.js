@@ -5,7 +5,7 @@ const Items = ({items, handlePreviewClick}) =>{
   const mapItems = () => items.map((item, i)=> {
     const {name, url, preview} = item;
     const itemPreview = preview
-      ? <img id={preview} onClick={handlePreviewClick} src={views} alt={`${name} preview`}/>
+      ? <img data-name={name} id={preview} onClick={handlePreviewClick} src={views} alt={`${name} preview`}/>
       : null;
 
     return (

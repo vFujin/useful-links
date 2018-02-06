@@ -10,15 +10,15 @@ class App extends Component {
     super();
 
     this.state = {
-      activePreview: undefined
+      clickedItem: undefined
     }
   }
 
   componentDidMount(){
     window.addEventListener("keydown", e =>{
-      if(this.state.activePreview !== undefined && e.keyCode === 27){
+      if(this.state.clickedItem !== undefined && e.keyCode === 27){
         this.setState({
-          activePreview: undefined
+          clickedItem: undefined
         })
       }
     })
@@ -26,35 +26,40 @@ class App extends Component {
 
   componentWillUnmount(){
     window.removeEventListener("keydown", this.setState({
-      activePreview: undefined
+      clickedItem: undefined
     }));
   }
 
   handlePreviewClick = (e) =>{
-    const target = e.currentTarget.id;
+    const preview = e.currentTarget.id;
+    const name = e.currentTarget.dataset.name;
+
     this.setState({
-      activePreview: target
+      clickedItem: {
+        preview,
+        name
+      }
     });
   };
 
   handleClosePreview = (e) => {
     if(!(e.target instanceof HTMLImageElement)) {
       this.setState({
-        activePreview: undefined
+        clickedItem: undefined
       })
     }
   };
 
   render() {
-    const {activePreview} = this.state;
+    const {clickedItem} = this.state;
 
     return (
       <div className="App">
         <h1>Useful links</h1>
         <Sections handlePreviewClick={this.handlePreviewClick}/>
         {
-          activePreview !== undefined
-            ? <Preview activePreview={activePreview}
+          clickedItem !== undefined
+            ? <Preview clickedItem={clickedItem}
                        handleClosePreview={this.handleClosePreview}/>
             : undefined
         }

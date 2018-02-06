@@ -149,22 +149,14 @@ body {
         justify-content: space-between;
         align-items: center;
         width: calc(100% - 1vh);
-        max-height: unset;
-        min-height: unset;
-        margin: 0;
-        padding: 1vh 0 1vh 0;
-        border: 0; }
+        padding: 1vh 0; }
         .sectionList .sectionList__section .sectionList__section--items .sectionItem:first-child {
           padding-top: 0; }
         .sectionList .sectionList__section .sectionList__section--items .sectionItem:last-child {
           padding-bottom: 0; }
-        .sectionList .sectionList__section .sectionList__section--items .sectionItem:hover {
-          box-shadow: none; }
-          .sectionList .sectionList__section .sectionList__section--items .sectionItem:hover span {
-            color: #cccccc; }
-          .sectionList .sectionList__section .sectionList__section--items .sectionItem:hover p {
-            color: #cccccc;
-            margin-left: 10px; }
+        .sectionList .sectionList__section .sectionList__section--items .sectionItem:hover a p {
+          color: white;
+          margin-left: 10px; }
         .sectionList .sectionList__section .sectionList__section--items .sectionItem .sectionItem__wrapper {
           display: flex;
           align-items: center; }
@@ -197,6 +189,12 @@ body {
     max-width: 75%;
     padding: 20px;
     border: 1px solid #cccccc; }
+    .preview-wrapper > div p {
+      position: absolute;
+      top: -12px;
+      background: black;
+      padding: 0 10px;
+      border: 1px solid; }
     .preview-wrapper > div img {
       width: 100%;
       height: 100%; }

@@ -1,11 +1,13 @@
 import React from 'react';
 import imageObj from '../assets/imagesObj';
 
-const Preview = ({activePreview, handleClosePreview}) =>{
+const Preview = ({clickedItem, handleClosePreview}) =>{
+  const {name, preview} = clickedItem;
   return (
     <div className="preview-wrapper" onClick={handleClosePreview}>
       <div>
-        <img src={imageObj[activePreview]} alt={activePreview}/>
+        <p>{name}</p>
+        <img src={imageObj[preview]} alt={name}/>
         <button onClick={handleClosePreview}>X</button>
       </div>
     </div>
