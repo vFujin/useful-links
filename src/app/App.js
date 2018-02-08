@@ -63,7 +63,7 @@ class App extends Component {
                        handleClosePreview={this.handleClosePreview}/>
             : undefined
         }
-
+        <p>Found a bug? Submit an issue</p>
       </div>
     );
   }

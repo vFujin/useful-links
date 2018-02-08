@@ -212,7 +212,7 @@ export const data = [
       },
       {
         name: "Free certificates (e.g. https)",
-        url: "https://color.adobe.com/explore/?filter=most-popular&time=month"
+        url: "https://letsencrypt.org/"
       },
       {
         name: ".gitignore generator",

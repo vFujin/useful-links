@@ -23,6 +23,7 @@
 
 @include screen('mobile') {
   .sectionList {
+    justify-content: center;
     .sectionList__section {
       height: 20vh;
       &:last-child{
