@@ -1,7 +1,7 @@
 {
   "name": "useful-stuff",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "homepage": "https://vfujin.github.io/useful-links",
   "dependencies": {
     "particles.js": "^2.0.0",
