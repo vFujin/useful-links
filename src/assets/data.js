@@ -21,6 +21,27 @@ export const data = [
     ]
   },
   {
+    sectionTitle: "reddit forums",
+    items: [
+      {
+        name: "r/programming",
+        url: "https://www.reddit.com/r/programming/"
+      },
+      {
+        name: "r/web_design",
+        url: "https://www.reddit.com/r/web_design/"
+      },
+      {
+        name: "r/ProgrammerHumor",
+        url: "https://www.reddit.com/r/ProgrammerHumor/"
+      },
+      {
+        name: "r/softwaregore",
+        url: "https://www.reddit.com/r/softwaregore/"
+      }
+    ]
+  },
+  {
     sectionTitle: "cheatsheets",
     items: [
       {
@@ -114,10 +135,6 @@ export const data = [
         url: "https://uigradients.com/#WhatliesBeyond"
       },
       {
-        name: "SCSS",
-        url: "https://gist.github.com/jareware/4738651"
-      },
-      {
         name: "Image filters",
         url: "http://bennettfeely.com/image-effects/",
         preview: "image_filters"
@@ -127,10 +144,6 @@ export const data = [
   {
     sectionTitle: "inspirations",
     items: [
-      {
-        name: "Little UI Details",
-        url: "https://twitter.com/i/moments/880688233641848832"
-      },
       {
         name: "Collect UI",
         url: "http://collectui.com/",
@@ -151,6 +164,19 @@ export const data = [
         url: "https://tympanus.net/codrops/",
         preview: "codrops"
       }
+    ]
+  },
+  {
+    sectionTitle: "Design Tips",
+    items: [
+      {
+        name: "Little UI Details",
+        url: "https://twitter.com/i/moments/880688233641848832"
+      },
+      {
+        name: "7 Practical tips",
+        url: "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
+      },
     ]
   },
   {
@@ -263,7 +289,20 @@ export const data = [
     ]
   },
   {
-    sectionTitle: "students",
+    sectionTitle: "guides",
+    items: [
+      {
+        name: "everything about <head>",
+        url: "https://gethead.info/"
+      },
+      {
+        name: "SCSS",
+        url: "https://gist.github.com/jareware/4738651"
+      },
+    ]
+  },
+  {
+    sectionTitle: "students (.net or .edu emails)",
     description: "Requires emails with .net or .edu",
     items: [
       {
