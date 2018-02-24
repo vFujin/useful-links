@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'links';
+  src:
+          url('../assets/icons/links.ttf') format('truetype'),
+          url('../assets/icons/links.woff') format('woff'),
+          url('../assets/icons/links.svg#links') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'links', serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-components:before {
+  content: "\e992";
+}
+.icon-reddit:before {
+  content: "\eac6";
+}
+.icon-cheatsheets:before {
+  content: "\e86d";
+}
+.icon-inspiration:before {
+  content: "\e90f";
+}
+.icon-checklist:before {
+  content: "\e065";
+}
+.icon-students:before {
+  content: "\e80c";
+}
+.icon-books:before {
+  content: "\e91f";
+}
+.icon-guides:before {
+  content: "\e920";
+}
+.icon-design:before {
+  content: "\e956";
+}
+.icon-api:before {
+  content: "\e95c";
+}
+.icon-tools:before {
+  content: "\e991";
+}
+.icon-icons:before {
+  content: "\ea5c";
+}
+.icon-discord:before {
+  content: "\e94c";
+}
+.icon-news:before {
+  content: "\e905";
+}
+.icon-css:before {
+  content: "\eae6";
+}

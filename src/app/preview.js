@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import imageObj from '../assets/imagesObj';
 
 const Preview = ({clickedItem, handleClosePreview}) =>{
@@ -15,3 +16,11 @@ const Preview = ({clickedItem, handleClosePreview}) =>{
 };
 
 export default Preview;
+
+Preview.propTypes = {
+  clickedItem: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    preview: PropTypes.string.isRequired
+  }),
+  handleClosePreview: PropTypes.func.isRequired
+};

@@ -22,6 +22,7 @@ export const data = [
   },
   {
     sectionTitle: "reddit forums",
+    icon: "reddit",
     items: [
       {
         name: "r/programming",
@@ -62,6 +63,7 @@ export const data = [
   },
   {
     sectionTitle: "checklists",
+    icon: "checklist",
     items: [
       {
         name: "Webdev Checklist",
@@ -77,6 +79,7 @@ export const data = [
   },
   {
     sectionTitle: "apis",
+    icon: "api",
     items: [
       {
         name: "Public APIs",
@@ -143,6 +146,7 @@ export const data = [
   },
   {
     sectionTitle: "inspirations",
+    icon: "inspiration",
     items: [
       {
         name: "Collect UI",
@@ -168,6 +172,7 @@ export const data = [
   },
   {
     sectionTitle: "Design Tips",
+    icon: "design",
     items: [
       {
         name: "Little UI Details",
@@ -303,6 +308,7 @@ export const data = [
   },
   {
     sectionTitle: "students (.net or .edu emails)",
+    icon: "students",
     description: "Requires emails with .net or .edu",
     items: [
       {
@@ -317,6 +323,20 @@ export const data = [
         name: "Microsoft Office 365 & newest Windows version",
         url: "https://www.microsoft.com/en-us/education/students/"
       }
+    ]
+  },
+  {
+    sectionTitle: "Discord channels",
+    icon: "discord",
+    items: [
+      {
+        name: "Facebook related (React / React-Native / Redux / Jest / GraphQL)",
+        url: "https://discordapp.com/invite/KWHrBDe"
+      },
+      {
+        name: "JavaScript",
+        url: "https://discordapp.com/invite/zGAkEq"
+      },
     ]
   }
 ];

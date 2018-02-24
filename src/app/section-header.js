@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SectionHeader = ({section}) =>{
   const {sectionTitle} = section;
@@ -15,3 +16,9 @@ const SectionHeader = ({section}) =>{
 };
 
 export default SectionHeader;
+
+SectionHeader.propTypes = {
+  section: PropTypes.shape({
+    sectionTitle: PropTypes.string.isRequired
+  })
+};

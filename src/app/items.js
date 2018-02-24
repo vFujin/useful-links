@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import views from '../assets/views.svg';
 
 const Items = ({items, handlePreviewClick}) =>{
@@ -27,3 +28,8 @@ const Items = ({items, handlePreviewClick}) =>{
 };
 
 export default Items;
+
+Items.propTypes = {
+  items: PropTypes.array.isRequired,
+  handlePreviewClick: PropTypes.func.isRequired
+};
