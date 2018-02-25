@@ -294,7 +294,8 @@ export const data = [
     ]
   },
   {
-    sectionTitle: "guides",
+    sectionTitle: "guides / tutorials",
+    icon: "guides",
     items: [
       {
         name: "everything about <head>",
@@ -304,6 +305,14 @@ export const data = [
         name: "SCSS",
         url: "https://gist.github.com/jareware/4738651"
       },
+      {
+        name: "Ben Awad tutorials (fullstack react + react-native)",
+        url: "https://www.youtube.com/user/99baddawg"
+      },
+      {
+        name: "The Net Ninja tutorials (JS and it's frameworks)",
+        url: "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
+      }
     ]
   },
   {
