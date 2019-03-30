@@ -127,14 +127,10 @@ export const data = [
       },
       {
         name: "Gradient samples #1",
-        url: "http://www.gradientify.dfusic.net/"
-      },
-      {
-        name: "Gradient samples #2",
         url: "https://webgradients.com/"
       },
       {
-        name: "Gradient samples #3",
+        name: "Gradient samples #2",
         url: "https://uigradients.com/#WhatliesBeyond"
       },
       {
