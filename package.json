@@ -2,12 +2,12 @@
   "name": "useful-stuff",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://vFujin.github.io/useful-links",
+  "homepage": "https://sbsrnt.github.io/useful-links",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +19,6 @@
     "gh-pages": "^1.1.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.7.0"
   }
 }
